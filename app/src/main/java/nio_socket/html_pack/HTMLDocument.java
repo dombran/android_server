@@ -120,7 +120,7 @@ public final class HTMLDocument {
                 if (ownerClass.equals(entry.getKey())) {
                     out.append(" class=\"active\"");
                 }
-                out.append("><a href=\"/admin/" + entry.getKey() + "\">" + entry.getValue() + "</a></li>\n");
+                out.append("><a href=\"/" + entry.getKey() + "\">" + entry.getValue() + "</a></li>\n");
             }
 
             out.append("        </ul>\n");

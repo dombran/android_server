@@ -39,7 +39,8 @@ public class JsonParse_mediaList_ext  {
             json_obj = new JSONObject(str_json);
 
             JSONArray arr = json_obj.getJSONArray("thumb");
-            item_num = arr.length() - 1 ;
+            if(arr.length() > 0)
+                item_num = arr.length() - 1 ;
             for(int i=0; i<item_num; i++){
                 if(i_max_numThumb < arr.getJSONObject(i).getInt("numThumb"))
                     i_max_numThumb = arr.getJSONObject(i).getInt("numThumb");
